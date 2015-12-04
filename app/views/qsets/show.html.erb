@@ -8,6 +8,12 @@
 
   <br>
   <h3 class="center"><b>Questions</b></h3><br>
+<!--   <a class="btn shortcut-button-link"
+     id="new-qset"
+     data-toggle="modal"
+     data-target="#modal-new-qset">
+    <span class="glyphicon glyphicon-plus-sign shortcut-button-glyphicon"></span>
+  </a> -->
   <div class="col-sm-12 right">
       <%= render "all_mine_other_filter" %>
   </div>
@@ -21,6 +27,7 @@
 
 <%= render "modal_question" %>
 <%= render "modal_social" %>
+<%= render "modal_new_question" %>
 <% if can? :manage, Qset %>
   <%= render "modal_edit_qset" %>
   <%= render "modal_new_qset" %>
